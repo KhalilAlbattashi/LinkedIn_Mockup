@@ -2,12 +2,614 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
+    background-color: #f3f2ef;
     height: 100vh;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    row-gap: 10px;
+    /* flex-direction: column;
+    align-items: center; */
+}
+.nav_bar{
+  /* background-color: black; */
+  grid-column: 1/8;
+  grid-row: 1/2;
+}
+.profile_section{
+  background-color: yellow;
+  grid-column: 1/3;
+  grid-row: 2/7;
+}
+.main_body{
+    /* background-color: black; */
+    grid-column: 3/6;
+    grid-row: 2/3;
+}
+.post{
+  background-color: black;
+  grid-column: 3/6;
+  grid-row: 3/7;
+}
+.suggestions{
+  /* background-color: black; */
+  grid-column: 6/8;
+  grid-row: 2/7;
+}
+
+/* Navbar Section Sheikha */
+
+/* css header style strart */
+html{
+  font-size: 62.5%;
+}
+
+.nav_bar{
+  /* background-color: black; */
+  grid-column: 1/8;
+  grid-row: 1/2;
+}
+.profile_section{
+  background-color: yellow;
+  grid-column: 1/3;
+  grid-row: 2/7;
+}
+.main_body{
+    /* background-color: black; */
+    grid-column: 3/6;
+    grid-row: 2/3;
+}
+.post{
+  background-color: black;
+  grid-column: 3/6;
+  grid-row: 3/7;
+}
+.suggestions{
+  /* background-color: black; */
+  grid-column: 6/8;
+  grid-row: 2/7;
+}
+
+
+header{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:  auto;
+    padding: 10px;
+    position: sticky;
+    z-index: 9999;
+    font-size: 1.6rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    
+    
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+
+.nav-left .logo img {
+   height: 3rem;
+}
+
+.nav-left .search {
+    width: 28rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #eef3f8;
+    border-radius: 0.5rem ;
+    margin: 0 1rem;
+    padding: 0.2rem;
+    transition: width 0.3s, border-color 0.3s ease;
+}
+
+.search:active {
+    width: 370px;
+    border: 2px solid#000;
+}
+
+
+.nav-left .search input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0 4rem;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    flex-grow: 1;
+    font-size: 1.6rem;
+    font-weight: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.nav-left  i {
+    /* margin-right: 5px; */
+    position: absolute;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.nav__right {
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+  }
+
+.headerOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3rem;
+    color: rgb(102, 102, 102);
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s ease;
+    font-size: 25px;
+  }
+
+  .headerOption i{
+    margin-bottom: 5px; 
+    font-size: 20px;
+  }
+  
+  .headerOption:hover {
+    color: black;
+
+  }
+  
+  .headerOption h3 {
+    font-size: 1.3rem;
+    /* margin-top: 1rem; */
+    margin: 0; 
+    padding: 0;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+  }
+
+  .avatar {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 5px;
+    
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.nav-second-right{
+    display: flex;
+    align-items: center;
+    border-left: 0.1rem solid #caccce;
+    padding-left: 1rem;
+
+}
+
+
+
+
+/* Feed section Khalil  */
+.feed {
+    margin: 0 20px;
+}
+  
+  .feed__inputContainer {
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .profile_img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .feed__input {
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    /* display: flex; */
+    padding: 10px;
+    color: gray;
+    padding-left: 15px;
+  }
+  
+  .feed__input > form {
+    display: flex;
+    width: 100%;
+  }
+
+  .feed__input > form > i {
+    border: none;
+    /* flex: 1; */
+    margin-left: 10px;
+    outline-width: 0;
+    font-weight: 600;
+  }
+  
+  .feed__input > form > input {
+    border: none;
+    /* flex: 1; */
+    margin-left: 10px;
+    outline-width: 0;
+    font-weight: 600;
+  }
+  
+  .feed__input > form > button {
+    display: none;
+  }
+  
+  .feed__inputOptions {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .inputOption {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .inputOption:hover {
+    background-color: whitesmoke;
+    border-radius: 10px;
+  }
+  
+  .inputOption > h4 {
+    margin-left: 5px;
+  }
+
+  /* Post Section Hajer */
+
+  .post
+{
+    /* box-sizing: border-box;
+    grid-row: 3 / 7;
+    grid-column: 3 / 6; */
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 0.5px solid #F4F4F4 ;
+    padding: 20px 20px 20px 20px;
+    margin-right: 20px;
+}
+.headerP
+{
+    display: flex;
+    margin-bottom: 10px;
+}
+.headerP span
+{
+    font-size: 40px;
+}
+.PostInfo
+{
+    margin-left: 10px;
+}
+.PostInfo p
+{
+    font-size: 12px;
+    color: gray;
+}
+.PostInfo h2
+{
+    font-size: 15px;
+}
+.more
+{
+    margin-left: 50%;
+}
+.Options
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.inputO
+{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+.inputO:hover
+{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.inputO h4
+{
+    margin-left: 5px;
+}
+.postBody img
+{
+    height: 190px;
+    width: 100%;
+}
+hr
+{
+    margin-top: 20px;
+    color: #E8E9E5;
+}
+.postBody p
+{
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+/* end of post style - Hajar section */
+/* ------------ */
+
+/* Maisa Section */
+
+/* Follow & Ad Maisa section */
+.right
+{
+    box-sizing: border-box;
+    grid-row: 2 / 6;
+    grid-column: 6 / 8;
+    margin-right: 70px;
+    margin-bottom: 90px;
+}
+
+.follow
+{
+    background-color: #fff;
+    border: 0.5px solid #F4F4F4 ;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    /* background-color: #fff; */
+}
+.followList {
+    list-style: none;
+    /* background-color: #fff; */
+}
+.recommendation
+{
+    /* display: flex; */
+    margin-bottom: 20px;
+    text-decoration: none;
+    /* justify-content: space-between; */
+    margin-top: 20px;
+    /* background-color: #fff; */
+}
+.center-re {
+    display: flex;
+    justify-content: center;
+}
+
+.PicPro
+{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    background-color: #fff;
+}
+.addTo h2
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    background-color: #fff;
+}
+.btnFollow button
+{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 40px;
+    display: flex;
+    padding: 9px 21px;
+    justify-content: space-between;
+    border:1px solid gray;
+    color: gray;
+    background: none;
+    margin-left: 66px;
+    margin-top: 11px;
+    /* transition: 0.3s; */
+    background-color: #fff;
+
+}
+.btnFollow button:hover
+{
+    border:2px solid darkgray;
+    /* border-color: darkgray; */
+    background-color:#ECEDEE;
+}
+.btnFollow button i
+{
+    margin-right: 10px;
+    font-size: 14px !important;
+    margin-top: 3px;
+    background-color: #fff;
+
+}
+.viewAll
+{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: gray;
+    background-color: #fff;
+}
+.PersonName .spPersonName
+{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: left;
+    word-spacing: 0px;
+    background-color: #fff;
+
+}
+.description .pDes
+{
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+    word-spacing: 0px;
+    background-color: #fff;
+}
+.ad
+{
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border: 0.5px solid #F4F4F4 ;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    background-color: #fff;
+}
+.adi p 
+{
+    text-align: right;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 600;
+    /* font-weight: 600; */
+    background-color: #fff;
+}
+.adi sub
+{
+    text-align: right;
+    font-size: 100px;
+    font-weight: 800;
+    background-color: #fff;
+}
+.PiclnkIcon
+{
+    display: flex;
+    margin-left: 55px;
+    background-color: #fff;
+}
+.PiclnkIcon i
+{
+    font-size: 80px;
+    text-align: center;
+    align-items: center;
+    margin-left: 20px;
+    background-color: #fff;
+}
+.PiclnkIcon img
+{
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    /* margin-left:30px; */
+    background-color: #fff;
+}
+.adPb {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+.adPb button
+{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 40px;
+    padding: 9px 21px;
+    border:1px solid #2F8AC5 ;
+    color: #2F8AC5 ;
+    background: none;
+    margin-top: 10px;
+    align-items: center;
+}
+.Unlock p
+{
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #fff;
+}
+.seeWho p
+{
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    background-color: #fff;
+}
+.footerr
+{
+    /* border: 0.5px solid; */
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    /* display: flex; */
+    /* margin: 0.4rem 0.8rem; */
+    /* justify-content: space-between; */
+    margin-bottom:50px;
+}
+.linkList
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content:space-around; 
+    color: black;
+}
+.word
+{
+    color: black;
+    font-size: 12px;
+    list-style-type: none;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+}
+.copyright
+{
+    display: flex;
+    /* justify-content: space-between; */
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.linIn
+{
+    color: blue;
+    font-weight: bold;
+    text-decoration: b;
+    padding-right: 10px;
+}
+
+/* end style of right section (Follow, Ad, footer) - Maisa section */
+
+
+/* media Query for right section */
+@media only screen and (max-width: 920px)
+{
+    .right
+    {
+        display: none;
+    }
 }
