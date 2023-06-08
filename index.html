@@ -4,10 +4,293 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="/static/css/styles.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="nav_bar">
+       <!-- navigation bar start -->
+    <header>
+      <!-- left nav side -->
+      <div class="nav-left">
+              <a href="#" class="logo"> <img src="static/imgs/logo.png"></a>
+              <div class="search">
+                 <form>
+                  <input type="text" placeholder="search">
+                 </form>
+                 <i class="material-icons">search</i>
+                 
+               </div>
+      </div>
+
+
+      <!-- right nav side -->
+
+      <div class="nav__right">
+          <div>
+              <a href="#" class="headerOption">
+                  <i class="material-icons">house</i>
+                  <h3>Home</h3>
+              </a>
+          </div>
+          <div>
+              <a href="#" class="headerOption">
+                  <i class="material-icons">group</i>
+                  <h3>My Network</h3>
+              </a>
+          </div>
+          <div>
+              <a href="#" class="headerOption">
+                  <i class="material-icons">card_travel</i>
+                  <h3>Jobs</h3>
+              
+              </a>
+          </div>
+
+          <div>
+              <a href="#" class="headerOption">
+                  <i class="material-icons">sms</i>
+                  <h3>Messaging</h3>
+              </a>
+          </div>
+          <div>
+              <a href="#" class="headerOption">
+                  <i class="material-icons">notifications</i>
+                  <h3>Notifications</h3>
+              </a>
+          </div>
+          <div class="headerOption">
+              <div class="avatar">
+                  <img src="static/imgs/img_avatar2.png" alt="Avatar">
+              </div>
+              <h3 class=>Me <i class="fa-solid fa-caret-down"></i></h3>
+              
+          </div>
+
+          <div class="nav-second-right">
+
+             <div class="headerOption">
+                 <li class="material-icons">apps</li>
+                 <h3>For Business <i class="fa-solid fa-caret-down"></i></h3>
+             </div>
+             <div class="headerOption">
+                 <li class="material-icons">event</li>
+                 <h3>Post a job for free</h3>
+             </div>
+         </div>
+          
+      </div>
+
+  </header>
+  <!-- navigation bar end -->
+    </div>
+    <div class="profile_section">
+
+    </div>
+    <div class="main_body">
+        <div class="feed">
+            <div class="feed__inputContainer">
+              <!-- <img class="profile_img" src="static/imgs/blank-profile-picture-973460_1280.webp" alt="#"> -->
+              <div class="feed__input">
+                <!-- <i class="material-icons"> create </i> -->
+                <form>
+                  <input type="text" placeholder="Start a Post"/>
+                  <button type="submit">Send</button>
+                </form>
+              </div>
     
+              <div class="feed__inputOptions">
+                <div class="inputOption">
+                  <!-- <i style="color: #70b5f9" class="material-icons"> insert_photo </i> -->
+                  <i style="color: #70b5f9" class="fa-solid fa-image"></i>
+                  <h4>Photo</h4>
+                </div>
+                <div class="inputOption">
+                  <!-- <i style="color: #e7a33e" class="material-icons"> subscriptions </i> -->
+                  <i style="color: #e7a33e" class="fa-brands fa-youtube"></i>
+                  <h4>Video</h4>
+                </div>
+                <div class="inputOption">
+                  <!-- <i style="color: #c0cbcd" class="material-icons"> event_note </i> -->
+                  <i style="color: #c0cbcd" class="fa-solid fa-briefcase"></i>
+                  <h4>Job</h4>
+                </div>
+                <div class="inputOption">
+                  <!-- <i style="color: #7fc15e" class="material-icons"> calendar_view_day </i> -->
+                  <i style="color: #7fc15e" class="fa-solid fa-newspaper"></i>
+                  <h4>Write Article</h4>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="post">
+      <!-- Post -->
+    <!-- Hajar -->
+    <div class="post">
+      <div class="headerP">
+          <span class="material-symbols-outlined">
+              account_circle
+          </span>
+          <div class="PostInfo">
+              <h2>Ahmed Ali</h2>
+              <p>UI/UX Designer at Thawani Pay</p>
+          </div>
+          <span class="material-symbols-outlined more">more_horiz</span>
+      </div>
+      <div class="postBody">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <img src="static/imgs/alexandre.jpg" alt="">
+      </div>
+      <hr>
+      <div class="Options">
+          <div class="inputO">
+              <span class="material-symbols-outlined">thumb_up</span>
+              <h4>Like</h4>
+          </div>
+          <div class="inputO">
+              <span class="material-symbols-outlined">chat_bubble</span>
+              <h4>Comment</h4>
+          </div>
+          <div class="inputO">
+              <span class="material-symbols-outlined">reply</span>
+              <h4>Repost</h4>
+          </div>
+          <div class="inputO">
+              <span class="material-symbols-outlined">send</span>
+              <h4>Send</h4>
+          </div>
+      </div>
+  </div>
+    </div>
+
+    <div class="suggestions">
+      <!-- Follow recommendation + Ad + Footer -->
+    <!-- Maisa -->
+    <div class="right">
+      <div class="follow">
+          <div class="addTo">
+              <h2 class="addFeed">Add to your feed<i class="fa-solid fa-info"></i></h2>
+          </div>
+          <ul class="followList">
+              <li class="recommendation">
+                 <div class="center-re">
+                  <a href="#" class="ApicFollow"><img src="static/imgs/man.png" alt="" class="PicPro"></a>
+                  <div>
+                      <!-- <a href="#"> -->
+                          <p class="PersonName">
+                              <span class="spPersonName">Asim Al-Shabibi</span>
+                          </p>
+                          <div class="description">
+                              <p class="pDes">
+                                  COO & Co-Founder at Rihal Data Migration and Services
+                              </p>
+                          </div>
+                      <!-- </a> -->
+                  </div>
+                 </div>
+                  <div class="btnFollow">
+                      <button><i class="fa-solid fa-plus"></i>Follow</button>
+                  </div>
+              </li>
+              <li class="recommendation">
+                  <div class="center-re">
+                   <a href="#" class="ApicFollow"><img src="static/imgs/profileman.png" alt="" class="PicPro"></a>
+                   <div>
+                       <!-- <a href="#"> -->
+                           <p class="PersonName">
+                               <span class="spPersonName">Mohammed Alsaadi</span>
+                           </p>
+                           <div class="description">
+                               <p class="pDes">
+                                  SMT at Omantel | Asst Engineer, Process & Automation COE at Omante
+                               </p>
+                           </div>
+                       <!-- </a> -->
+                   </div>
+                  </div>
+                   <div class="btnFollow">
+                       <button><i class="fa-solid fa-plus"></i>Follow</button>
+                   </div>
+               </li>
+               <li class="recommendation">
+                  <div class="center-re">
+                   <a href="#" class="ApicFollow"><img src="static/imgs/profilewomen.png" alt="" class="PicPro"></a>
+                   <div>
+                       <!-- <a href="#"> -->
+                           <p class="PersonName">
+                               <span class="spPersonName">Muna Adam</span>
+                           </p>
+                           <div class="description">
+                               <p class="pDes">
+                                  Business Support Lead at Rihal Data Migration and Services LLC
+                               </p>
+                           </div>
+                       <!-- </a> -->
+                   </div>
+                  </div>
+                   <div class="btnFollow">
+                       <button><i class="fa-solid fa-plus"></i>Follow</button>
+                   </div>
+               </li>
+          </ul>
+  <p class="viewAll">View all recommendation <sub><span class="material-symbols-outlined" style="font-size: 15px;font-weight: 600;background-color: #fff;">
+              arrow_forward
+              </span></sub></p>
+      </div>
+      <div class="ad">
+          <div class="adi">
+              <p class="adddd">Ad <sup>...</sup></p>
+          </div>
+          <div class="Unlock">
+              <p>Maisa Sulaiman, unlock your full potential with LinkedIn Premium</p>
+          </div>
+          <div class="PiclnkIcon">
+              <img src="static/imgs/profile-user.png" alt="">
+              <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="seeWho">
+              <p style="font-weight: bold;">See Who's viewed your profile in the last 90 days</p>
+          </div>
+          <div class="adPb">
+              <button>Try for Free</button>
+          </div>
+      </div>
+      <footer class="footerr">
+          <div class="word">
+              <ul class="linkList">
+                  <li style="text-align: left;">About</li>
+                  <li style="text-align: center;">Accessibility</li>
+                  <li style="text-align: right;">Help Center</li>
+              </ul>
+              <ul class="linkList">
+                  <li style="text-align: left;">Privacy & Terms<i class="fa-sharp fa-solid fa-caret-down"></i> </li>
+                  <li style="text-align: right;">Ad Choices</li>
+              </ul>
+              <ul class="linkList">
+                  <li style="text-align: left;">Advertising</li>
+                  <li style="text-align: right;">Business Services<i class="fa-sharp fa-solid fa-caret-down"></i> </li>
+              </ul>
+              <ul class="linkList">
+                  <li style="text-align: left;">Get the LinkedIn app</li>
+                  <li style="text-align: right;">More</li>
+              </ul>
+          </div>
+          <div class="copyright">
+              <p class="linIn"><strong>LinkedIn</strong><i class="fa-brands fa-linkedin"></i></p>
+              <p style="color: black; font-weight: 600;">LinkedIn Corporation © 2023</p>
+          </div>
+  </div>
+  <!-- Follow recommendation + Ad + Footer End -->
+    </div>
+
+    <script src="https://kit.fontawesome.com/37e07fa3b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
